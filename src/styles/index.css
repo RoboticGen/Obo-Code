@@ -70,7 +70,8 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain;
-
+  min-height: 400px;
+  min-width: 400px;
 }
 .editing-image
 {
