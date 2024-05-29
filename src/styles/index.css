@@ -52,18 +52,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-radius: 0.6rem;
   background-color: white;
   border: 0.1rem solid rgba(77, 151, 255, 0.25);
   padding: 0rem 0.2rem 0.2rem 0.2rem;
   box-shadow: 2px 3px 18px 0px rgba(0, 0, 0, 0.34);
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
+.blocky-editor .button-row {
+  width: 100%;
+}
+
+
 .editor {
-  height: 99%;
-  width: 99%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+
 }
 .editing-image
 {
@@ -93,7 +100,7 @@
   background-color: white;
   border: 0.1rem solid rgba(77, 151, 255, 0.25);
   padding: 0.2rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   box-shadow: 2px 3px 18px 0px rgba(0, 0, 0, 0.34);
   overflow-y: auto;
   max-height: 70vh;
@@ -188,7 +195,7 @@ div:nth-of-type(2)::-webkit-resizer {
   border: 0.1rem solid rgba(77, 151, 255, 0.25);
   box-shadow: 2px 3px 18px 0px rgba(0, 0, 0, 0.34);
   padding: 0.2rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   /* overflow-y: auto; */
 }
 .output-title {
