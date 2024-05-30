@@ -105,7 +105,7 @@ function showNotification(message) {
 // ----------------------------------------
 
 /*Initialize the skulpt */
-Sk.configure({ output: outputfun, read: builtinRead });
+Sk.configure({ output: outputfun, read: builtinRead , __future__: Sk.python3, debugging: false});
 (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = "editor";
 
 // ----------------------------------------
@@ -175,7 +175,7 @@ exportButton.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   showNotification("Welcome to Python Editor");
   let codesnippet = 
-  `import turtle\ncolors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']\nt = turtle.Turtle()\nturtle.bgcolor('black')\nfor x in range(360):\n\tt.pencolor(colors[x%6])\n\tt.width(x//100 + 1)\n\tt.forward(x)\n\tt.left(59) 
+  `import turtle\ncolors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']\nt = turtle.Turtle()\nfor x in range(360):\n\tt.pencolor(colors[x%6])\n\tt.width(x//100 + 1)\n\tt.forward(x)\n\tt.left(59) 
   `
   
   insertPythonSnippet(codesnippet)

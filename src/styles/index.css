@@ -271,10 +271,32 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
+    grid-template-rows: 1fr 10fr 3fr 1fr;
     grid-template-areas:
-      "navBar navBar navBar navBar"
-      "editor editor editor editor"
-      "code code code code"
-      "output output output output";
+      "navBar"
+      "code"
+      "editor"
+      "output";
+  }
+  .code {
+    margin-right: 0.5rem;
+    min-height: 60vh;
+  }
+  .blocky-editor
+  {
+    margin-left: 0.5rem;
+  }
+  .output {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .notification {
+    position:absolute;
+    top:auto;
+    bottom: 20px;
+    left: 50%;
+    padding: 10px 20px 10px 20px;
+    background-color:#9d9d9d;;
+    color: white;
   }
 }
