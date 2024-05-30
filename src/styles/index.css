@@ -268,48 +268,6 @@ body {
   background-color: rgba(77, 151, 255, 0.25);
   margin: 0;
 }
-.blocklyMainBackground {
-  stroke: none;
-}
-
-.blocklyToolboxDiv {
-  background-color: #f3f3f3;
-}
-
-/* Makes our label white. */
-.blocklyTreeLabel {
-  color: white;
-}
-
-/* Adds padding around the group of categories and separators. */
-.blocklyToolboxContents {
-  padding: 0.5em;
-}
-
-/* Adds space between the categories, rounds the corners and adds space around the label. */
-.blocklyTreeRow {
-  padding: 3px;
-  margin-bottom: 0.5em;
-  border-radius: 4px;
-}
-
-/* Changes color of the icon to white. */
-.customIcon {
-  color: white;
-  padding: 0.5em;
-}
-
-/* Stacks the icon on top of the label. */
-.blocklyTreeRowContentContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-}
-
-.blocklyTreeRow {
-  height: initial;
-}
 
 @media screen and (max-width: 768px) {
   .container {
