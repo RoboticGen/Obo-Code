@@ -43,12 +43,20 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
                 ],
+
+            },
+            { //https://webpack.js.org/loaders/css-loader/
+                test: /\.css$/, 
+                loader: "css-loader",
+                options: {
+                    url: false,
+                }
             },
             {
                 test: /\.(png|jpg|jpeg|webp)$/i,
                 type: 'asset/resource'
+
             },
         ],
     },
@@ -64,11 +72,13 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: "src/assets/img/academyLogo.webp", to: ""},
-                { from: "src/assets/img/obo_blocks.webp", to: ""},
+                { from: "src/assets/img/OboCode.png", to: ""},
+                { from: "src/SEO", to: ""},
             ]
         }),
         new MiniCssExtractPlugin({
             filename: '[name][contenthash].css',
+            
         }),
     ]
 };

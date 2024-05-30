@@ -15,7 +15,7 @@ const state = EditorState.create({
     basicSetup,
     keymap.of([indentWithTab]),
     python(),
-    editableCompartment.of(EditorView.editable.of(false))
+    editableCompartment.of(EditorView.editable.of(true))
   ],
 });
 

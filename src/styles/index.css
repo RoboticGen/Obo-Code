@@ -52,38 +52,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-radius: 0.6rem;
   background-color: white;
   border: 0.1rem solid rgba(77, 151, 255, 0.25);
   padding: 0rem 0.2rem 0.2rem 0.2rem;
   box-shadow: 2px 3px 18px 0px rgba(0, 0, 0, 0.34);
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.blocky-editor .button-row {
+  width: 100%;
 }
 
 .editor {
-  height: 99%;
-  width: 99%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+  min-height: 400px;
+  min-width: 400px;
 }
-.editing-image
-{
+.editing-image {
   height: 50%;
   opacity: 0;
-  transition: 
-  height 0.5s,
-  opacity 1.5s;
+  transition: height 0.5s, opacity 1.5s;
 }
-.editing-image:active
-{
+.editing-image:active {
   height: 70%;
   opacity: 1;
 }
-.editing-image:hover
-{
+.editing-image:hover {
   height: 70;
   opacity: 1;
 }
-
 
 .code {
   grid-area: code;
@@ -93,7 +94,7 @@
   background-color: white;
   border: 0.1rem solid rgba(77, 151, 255, 0.25);
   padding: 0.2rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   box-shadow: 2px 3px 18px 0px rgba(0, 0, 0, 0.34);
   overflow-y: auto;
   max-height: 70vh;
@@ -101,8 +102,6 @@
   overflow-x: hidden;
   resize: vertical;
 }
-
-
 
 div:nth-of-type(2)::-webkit-resizer {
   background: transparent;
@@ -162,6 +161,26 @@ div:nth-of-type(2)::-webkit-resizer {
 #edit-button:hover {
   background-color: #1a3a59ec;
 }
+
+select {
+  appearance: none;
+  /*  safari  */
+  -webkit-appearance: none;
+  /*  other styles for aesthetics */
+  width: 100%;
+  padding: 0.5em 2em 0.5em 1em;
+  border: none;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: medium;
+  background-color: #9d9d9d;
+}
+select:focus {
+  outline: none;
+  border-radius: 0.3rem;
+  border: none;
+}
 .code-snippet {
   display: flex;
   flex-direction: column;
@@ -188,7 +207,7 @@ div:nth-of-type(2)::-webkit-resizer {
   border: 0.1rem solid rgba(77, 151, 255, 0.25);
   box-shadow: 2px 3px 18px 0px rgba(0, 0, 0, 0.34);
   padding: 0.2rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   /* overflow-y: auto; */
 }
 .output-title {
@@ -238,9 +257,9 @@ div:nth-of-type(2)::-webkit-resizer {
   font-style: normal;
   grid-template-rows: 1fr 8fr 3fr;
   grid-template-areas:
-  "navBar navBar navBar navBar"
-  "code editor editor editor"
-  "output editor editor editor";
+    "navBar navBar navBar navBar"
+    "code editor editor editor"
+    "output editor editor editor";
   grid-gap: 0.5rem;
   height: calc(100vh - 0.5rem);
 }
