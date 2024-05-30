@@ -2,7 +2,11 @@
 let terminal = document.getElementById('terminal-output');
 
 function outputfun(text) {
+    if (text === undefined || text === null || text === '') {
+        return;
+    }
     terminal.innerHTML += text + '>>> ';
+
 }
 
 function inputfun() {

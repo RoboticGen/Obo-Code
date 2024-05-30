@@ -73,6 +73,7 @@ module.exports = {
             patterns: [
                 { from: "src/assets/img/academyLogo.webp", to: ""},
                 { from: "src/assets/img/OboCode.png", to: ""},
+                { from: "src/SEO", to: ""},
             ]
         }),
         new MiniCssExtractPlugin({
