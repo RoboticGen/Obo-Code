@@ -47,6 +47,11 @@ You can access the Obo Code platform by opening [Obo Code](https://obocode.robot
 
 ## Documentation
 
+Here are the links to the documentation of Obo Code:
+
+- [Software Requirements Specification](SRS.md)
+- [System Design Document](SDD.md)
+
 
 ## Dependencies
 
