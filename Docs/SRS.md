@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The purpose of this document is to outline the requirements for the development of Obo Code, which is a extension for Obo Blocks to support intrtpreting python turtle library with graphics. Obo Code aims to simplify the process of running Python code with graphical output using the turtle library within the browser environment.
+The purpose of this document is to outline the requirements for the development of Obo Code, which is a extension for [Obo Blocks](https://oboblocks.roboticgenacademy.com/) to support intrtpreting python turtle library with graphics. Obo Code aims to simplify the process of running Python code with graphical output using the turtle library within the browser environment.
 
 ## Scope
 
@@ -41,7 +41,7 @@ Obo Code will provide a platform for users to write and execute Python code with
 1. **Python Interpreter** : Run(evaluate/execute) python code snippets
 2. **Error Handling** : Display errors when there are syntax or runtime errors in the code.
 
-### User Interfaces
+## User Interfaces
 
 Obo code will extend the user interfaces of Obo Blocks with additional components for turtle graphics.
 
